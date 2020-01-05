@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./card.css";
+// import "./card.css";
 
-import MoviesCardImage from "../Images/moviesCover.jpg";
+import MoviesCardImage from "../../Images/moviesCover.jpg";
 const MoviesCard = props => {
   return (
     <Link to="/movie" className="movies_card">

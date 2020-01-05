@@ -1,0 +1,24 @@
+.footer{
+    background: #1d1d1d;
+    font-size: 1.6rem;
+    color:grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.footer_logo{
+    font-size: 1.6rem;
+    color: white;
+}
+
+.footer_list {
+    flex-direction: row;
+    font-size: 1.3rem;
+    margin: 0;
+    list-style:none;
+}
+.footer_list-element{
+    margin:0 .5rem;
+}
