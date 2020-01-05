@@ -1,12 +1,16 @@
 import React from "react";
 // import "./detail.css";
 
-import MoviesCardImage from "../../Images/moviesCover.jpg";
-import MoviesCover from "../../Images/medium-cover.jpg";
-import MovieScreenShot1 from "../../Images/medium-screenshot1.jpg";
-import MovieScreenShot2 from "../../Images/medium-screenshot2.jpg";
-import MovieScreenShot3 from "../../Images/medium-screenshot3.jpg";
-import MovieBackground from "../../Images/background.jpg";
+import {
+  PosterOne,posterSecond,
+  MovieScreenShot1,MovieScreenShot2,MovieScreenShot3
+} from "../../Images/images";
+
+// import MoviesCardImage from "../../Images/moviesCover.jpg";
+// import MoviesCover from "../../Images/medium-cover.jpg";
+// import MovieScreenShot1 from "../../Images/medium-screenshot1.jpg";
+// import MovieScreenShot2 from "../../Images/medium-screenshot2.jpg";
+// import MovieScreenShot3 from "../../Images/medium-screenshot3.jpg";
 
 class MovieDetail extends React.Component {
   render() {
@@ -14,7 +18,7 @@ class MovieDetail extends React.Component {
       <div className="detail">
         <div className="detail_main">
           <div className="detail_main--poster">
-            <img className="detail_main--poster_image" src={MoviesCover} />
+            <img className="detail_main--poster_image" src={posterSecond} />
             <div className="detail_main--poster_download">
               {/* <img className="detail_main--poster_pic" /> */}
               <span className="detail_main--poster_title"> Download</span>
@@ -49,10 +53,10 @@ class MovieDetail extends React.Component {
           <div className="detail_main--rec">
             <p className="detail_rec--title">Similar Movies</p>
             <div className="detail_rec--images">
-              <img className="detail_rec--images1" src={MoviesCardImage} />
-              <img className="detail_rec--images2" src={MoviesCardImage} />
-              <img className="detail_rec--images3" src={MoviesCardImage} />
-              <img className="detail_rec--images4" src={MoviesCardImage} />
+              <img className="detail_rec--images1" src={PosterOne} />
+              <img className="detail_rec--images2" src={PosterOne} />
+              <img className="detail_rec--images3" src={PosterOne} />
+              <img className="detail_rec--images4" src={PosterOne} />
             </div>
           </div>
         </div>
