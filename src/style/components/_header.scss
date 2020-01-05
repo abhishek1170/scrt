@@ -1,0 +1,53 @@
+
+.header{
+    background: #1d1d1d; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_first {
+    padding: 0 0 0 8rem;
+    font-size: 1.9rem;
+    font-weight: 100;
+    color:grey
+}
+
+.header_second{
+    flex-basis: 50%;
+    justify-content: center;
+}
+
+.header_second *{
+    margin: 0 1rem;
+}
+
+.header_logo{
+    font-size: 1.6rem;
+    padding-right:2rem ;
+}
+
+.header_btn{
+    border:none;
+    text-decoration: none;
+    background: transparent;
+    font-size:1.3rem;
+    color:grey;
+    cursor: pointer;
+    transition: color 1s;
+}
+
+.header_btn:hover{
+    color:white;
+}
+
+.header_quick {
+    outline: none;
+    background: transparent;
+    border:1px solid grey;
+    padding:.5rem 1rem;
+    border-radius: 25px;
+    color:grey
+}
+
+

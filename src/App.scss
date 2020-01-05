@@ -1,11 +1,26 @@
-*
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+@import "./style/abstracts/variables";
+@import "./style/abstracts/mixins"; 
+@import "./style/abstracts/functions";
 
-html {
-  font-size: 62.5%;
-}
+@import "./style/base/base"; 
+@import "./style/base/animation"; 
+@import "./style/base/reset";
+@import "./style/base/typography";
+@import "./style/base/utilities";
+
+@import "./style/components/card";
+@import "./style/components/footer"; 
+@import "./style/components/footer"; 
+@import "./style/components/header"; 
+
+@import "./style/layout/silhouette";
+
+@import "./style/pages/main"; 
+@import "./style/pages/browse"; 
+@import "./style/pages/detail";
+
+@import "./style/theme/dark"; 
+
+
+
+

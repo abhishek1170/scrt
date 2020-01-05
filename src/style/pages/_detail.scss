@@ -1,0 +1,112 @@
+.detail {
+    background: #171717;
+    color: white;
+}
+  
+.detail > div {
+  max-width: 80vw;
+  width: 100rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.detail_main {
+  padding-top: 3rem !important;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.detail_main--poster,
+.detail_main--rec{
+  flex:1
+}
+
+.detail_main--outfit{
+  flex:2
+}
+
+
+.detail_main--poster_title{
+  text-align: center;
+  font-size: 1.6rem;
+  background: chartreuse;
+  display: block;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+.detail_main--poster_image{
+  width: 100%;
+}
+
+
+.detail_main--outfit{
+  padding:0rem 6rem;
+}
+
+.detail_title{
+  font-size:4rem;
+  margin-bottom: 2rem;
+}
+
+.detail_year,
+.detail_genre{
+  font-size: 2rem; 
+}
+
+.detail_quality{
+  margin-top:2rem;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.detail_quality *{
+  margin:1rem 1rem 0 0;
+}
+
+.detail_quality--title{
+  font-size: 2rem;
+}
+.detail_quality--download{
+  font-size: 1.4rem;
+  padding: .5rem 1rem;
+  border-radius: 6px;
+  border:1px solid white;
+  background: rgba(240, 240, 240, 0.027);
+}
+
+.detail_rec--images{
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+
+.detail_rec--images1,
+.detail_rec--images2,
+.detail_rec--images3,
+.detail_rec--images4{
+  width: 10rem;
+}
+
+.detail-images {
+  display: flex;
+  margin-top:3rem !important;
+  width:110rem !important;
+}
+
+.detail-images *{
+  flex:1;
+  margin-right: 2px;
+}
+
+
+/* Detail about section */
+
+.detail_about{
+  display: flex;
+}

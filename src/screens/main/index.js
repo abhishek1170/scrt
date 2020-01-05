@@ -1,8 +1,6 @@
 import React from "react";
 
-import "./main.css";
-
-import MoviesCard from "../MovieCard";
+import MoviesCard from "../../components/MovieCard";
 
 class Main extends React.Component {
   render() {

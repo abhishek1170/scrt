@@ -1,12 +1,12 @@
 import React from "react";
-import "./detail.css";
+// import "./detail.css";
 
-import MoviesCardImage from "../Images/moviesCover.jpg";
-import MoviesCover from "../Images/medium-cover.jpg";
-import MovieScreenShot1 from "../Images/medium-screenshot1.jpg";
-import MovieScreenShot2 from "../Images/medium-screenshot2.jpg";
-import MovieScreenShot3 from "../Images/medium-screenshot3.jpg";
-import MovieBackground from "../Images/background.jpg";
+import MoviesCardImage from "../../Images/moviesCover.jpg";
+import MoviesCover from "../../Images/medium-cover.jpg";
+import MovieScreenShot1 from "../../Images/medium-screenshot1.jpg";
+import MovieScreenShot2 from "../../Images/medium-screenshot2.jpg";
+import MovieScreenShot3 from "../../Images/medium-screenshot3.jpg";
+import MovieBackground from "../../Images/background.jpg";
 
 class MovieDetail extends React.Component {
   render() {

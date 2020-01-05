@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import HeaderLogo from "../Images/logo-YTS.svg";
-import "./header.css";
+import HeaderLogo from "../../Images/logo-YTS.svg";
+// import "./header.css";
 
 class Header extends React.Component {
   render() {

@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./pagination.css";
+// import "./pagination.css";
 
 const Pageination = () => {
   let first = 1;
