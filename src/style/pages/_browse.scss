@@ -1,5 +1,5 @@
 .browse {
-    background: #171717;
+    background:$dark-website;
     color: white;
   }
   
@@ -127,13 +127,14 @@
     font-size: 2rem;
   }
   
-  .browse-movies--movies * {
-    width: 15em;
-  }
+  // .browse-movies--movies * {
+  //   width: 15em;
+  // }
   
   .browse-movies--movies .movies_card{
       margin-top:2rem;
       margin-left: 5rem;
+      width: 15em;
   }
   
   .browse-movies--movies {

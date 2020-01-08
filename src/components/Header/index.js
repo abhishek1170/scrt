@@ -7,7 +7,7 @@ import HeaderLogo from "../../Images/logo-YTS.svg";
 class Header extends React.Component {
   render() {
     return (
-      <header className="header">
+      <header className="header header_postion">
         <div className="header header_first">
           <div className="header_logo">
             <img src={HeaderLogo} alt="YTS" />

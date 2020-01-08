@@ -2,6 +2,9 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
+//font
+import "./font";
+
 // css
 import "./App.scss";
 
@@ -22,15 +25,9 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <Switch>
-          <Route path="/movie">
-            <Detail />
-          </Route>
-          <Route path="/browse">
-            <Browse />
-          </Route>
-          <Route path="/">
-            <Main />
-          </Route>
+          <Route path="/movie" component={Detail}/>
+          <Route path="/browse" component={Browse}/>
+          <Route path="/" component={Main}/>
         </Switch>
         <Footer />
       </div>

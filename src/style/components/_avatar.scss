@@ -1,0 +1,31 @@
+.avatar{
+    display: flex;
+    align-items:center;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom:.3px solid rgba(255, 255, 255, 0.315);
+    *:not(:last-child){
+        margin-right: .5rem;
+    }
+    &_image{
+        height:4rem;
+        width: 4rem;
+        overflow: hidden;
+        position: relative;
+        border-radius: 100%;
+        * {
+            width: 100%;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &_original_name{
+        @include heading_level(1.2);
+        color: $font-grey;
+    }
+    &_charater_name{
+        @include heading_level(1.2);
+    }
+}

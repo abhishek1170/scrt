@@ -1,8 +1,38 @@
 import React from "react";
+import axios from "axios";
 
 import MoviesCard from "../../components/MovieCard";
+import Pagination from "../../components/Pagination";
 
 class Browse extends React.Component {
+  state = {
+    movies: []
+  };
+
+  storeMovies = data => {
+    const movies = data.results.map((data, index) => {
+      let {
+        vote_count,
+        id,
+        genre_ids,
+        poster_path,
+        title,
+        vote_average,
+        release_date
+      } = data;
+      return {
+        vote_count,
+        id,
+        genre_ids,
+        poster_path,
+        title,
+        vote_average,
+        release_date
+      };
+    });
+    this.setState({ movies });
+  };
+
   render() {
     return (
       <div class="browse">
@@ -69,31 +99,26 @@ class Browse extends React.Component {
         </div>
         <div class="browse-movies">
           <p class="browse-movies--result">14,131 YIFY Movies Found</p>
+          <Pagination />
           <div class="browse-movies--movies">
-            <MoviesCard/>
-            <MoviesCard/>
-            <MoviesCard/>
-            <MoviesCard/>
-            <MoviesCard/>
-            <MoviesCard/>
-            <MoviesCard/>
-            <MoviesCard/>
-            <MoviesCard/>
-            <MoviesCard/>
-            <MoviesCard/>
-            <MoviesCard/>
-            <MoviesCard/>
-            <MoviesCard/>
-            <MoviesCard/>
-            <MoviesCard/>
-            <MoviesCard/>
-            <MoviesCard/>
-            <MoviesCard/>
-            <MoviesCard/>
+            {
+              this.state.movies.map((movie={})=><MoviesCard key={movie.id} movie={movie}/>)
+            }
           </div>
+          <Pagination />
         </div>
       </div>
     );
+  }
+
+  componentDidMount() {
+    let apiUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`;
+
+    axios(apiUrl)
+      .then(
+        response => response && response.data && this.storeMovies(response.data)
+      )
+      .catch(error => console.log(error));
   }
 }
 
