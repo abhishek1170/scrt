@@ -1,6 +1,6 @@
 
 .header{
-    background: #1d1d1d; 
+    background: $dark-website; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,19 +35,48 @@
     color:grey;
     cursor: pointer;
     transition: color 1s;
+    font-weight: bolder;
+    &:hover{
+        color:white;
+    }
 }
 
-.header_btn:hover{
-    color:white;
-}
+
 
 .header_quick {
-    outline: none;
-    background: transparent;
     border:1px solid grey;
-    padding:.5rem 1rem;
     border-radius: 25px;
-    color:grey
+    color:grey;
+    &--input{
+        border:none;
+        outline: none;
+        margin:0;
+        background: transparent;
+        padding:1rem;
+        padding-left: 0;
+        color:grey;
+        &::-webkit-input-placeholder{
+            font-weight: bolder;
+        }
+    }
+}
+
+
+
+.header_login {
+    color:white;
+    @include heading_level(1.2);
+    font-weight: bolder;
+    & *{
+        margin:0;
+        padding:0 1rem;
+    }
+    &--login{
+        border-right: 1px solid white;
+    }
+    &--register{
+
+    }
 }
 
 

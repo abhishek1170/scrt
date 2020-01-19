@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import HeaderLogo from "../../Images/logo-YTS.svg";
-// import "./header.css";
+import QuickSearch from "./Quickbar";
 
 class Header extends React.Component {
   render() {
     return (
-      <header className="header header_postion">
+      <header className="header header_postion border-bottom-light">
         <div className="header header_first">
           <div className="header_logo">
             <img src={HeaderLogo} alt="YTS" />
@@ -15,19 +15,27 @@ class Header extends React.Component {
           <p>HD movies at the smallest file size</p>
         </div>
         <div className="header header_second">
-          <input className="header_quick" placeholder="Quick Search" />
+          <QuickSearch />
           <Link
             className="header_btn"
             to={{
-              pathname: "/",
+              pathname: "/"
             }}
-          >Home</Link>
+          >
+            Home
+          </Link>
           <Link
             className="header_btn"
             to={{
-              pathname: "/Browse",
+              pathname: "/Browse"
             }}
-          >Browse Movies</Link>
+          >
+            Browse Movies
+          </Link>
+          <div className="header_login">
+            <span className="header_login--login">Login</span>
+            <span className="header_login--register">Register</span>
+          </div>
         </div>
       </header>
     );

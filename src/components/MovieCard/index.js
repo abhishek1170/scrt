@@ -28,7 +28,7 @@ const MoviesCard = ({ movie = {} }) => {
           <p className="movies_card--rating">{vote_average}/10</p>
           <p className="movies_card--genre">Action</p>
           <p className="movies_card--genre">Adventure</p>
-          <div className="movies_card--btn">View Detail</div>
+          <p className="movies_card--btn">View Detail</p>
         </div>
       </div>
       <h6 className="movies_card--title">{title}</h6>

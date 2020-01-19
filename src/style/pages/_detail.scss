@@ -1,10 +1,11 @@
 .detail {
-  background: $dark-website;
+  background: $light-website;
   color: white;
+  padding-bottom: 3rem;
 
   > div:not(:first-child) {
     max-width: 90vw;
-    width: 110rem;
+    width: 110em;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -225,5 +226,29 @@
     > div:not(:last-child) {
       margin-bottom: 5rem;  
     }
+  }
+}
+
+.detail_download {
+  // background: turquoise;
+}
+
+.detail-comment {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top:3rem;
+  &_title{
+    @include heading_level(3);
+    font-weight: 800;
+    &--icon{
+      color:$dark-green;
+      margin-right:1rem;
+    }
+  }
+  &_left{
+    flex:1;
+  }
+  &_right{
+    flex:1;
   }
 }

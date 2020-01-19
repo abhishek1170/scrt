@@ -7,6 +7,9 @@
 // heading type's
 
 @mixin heading_level($level) {
+  @if ($level == 0.8) {
+    $level: .8;
+  }
   @if ($level == 1.1) {
     $level: 1.1;
   }
@@ -47,5 +50,14 @@
     $level: 6;
   }
 
-  font-size: $level * 1em;
+  font-size: $level * 1rem;
+}
+
+// border
+.border-bottom-light{
+  border-bottom: 1px solid $light-white;
+}
+
+.border-top-light{
+  border-top: 1px solid $light-white;
 }

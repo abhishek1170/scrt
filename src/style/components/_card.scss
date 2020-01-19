@@ -27,7 +27,7 @@
 
 .movies_card--detail{
     position: absolute;
-    width: 70%;
+    width: 100%;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
@@ -44,10 +44,11 @@
 
 .movies_card--btn {
     text-align: center;
-    padding:1rem 2rem;
+    padding:1rem 0;
+    margin:2rem 1rem 0rem 1rem!important;
     color:white;
     background:green;
-    font-size: 1.5rem;
+    font-size: 80%;
     transition: all .3s ease-in;
     transform:translateY(200%)
 }

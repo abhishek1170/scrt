@@ -4,7 +4,7 @@ import React from "react";
 class Footer extends React.Component {
   render() {
     return (
-      <footer className="footer">
+      <footer className="footer border-top-light">
           <ul className="footer footer_list">
               <li className="footer_list-element">
                     <p className="footer_logo">YST</p>

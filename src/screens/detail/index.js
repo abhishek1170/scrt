@@ -1,9 +1,11 @@
 import React from "react";
 import axios from "axios";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Avatar from "../../components/Avatars";
+import TabDownload from "../../components/TabDownload";
+import Review from "../../components/Review";
+import Comment from "../../components/Comment";
 
 import {
   PosterOne,
@@ -195,11 +197,62 @@ class MovieDetail extends React.Component {
             </div>
           </div>
         </div>
-        <div className="detail-download">
-          <div className="detail-download--header"></div>
-          <div className="detail-download--detail"></div>
+        <div className="detail_download">
+          <TabDownload />
         </div>
-        <div className="detail-comment"></div>
+        <div className="detail-comment">
+          <div className="detail-comment_left">
+            <div className="detail-comment_title">
+              <FontAwesomeIcon
+                className="detail-comment_title--icon"
+                icon="star"
+              />
+              <span className="detail-comment_title--name">Movie Reviews</span>
+            </div>
+            <Review />
+            <Review />
+            <Review />
+            <Review />
+            <p style={{
+              textAlign:"right",
+              fontSize:"1.2rem",
+              fontWeight:"bolder",
+              margin:"2rem 0",
+              color:"#919191"
+            }}>Read more IMDb reviews</p>
+          </div>
+          <div className="detail-comment_right">
+            <div className="detail-comment_title">
+              <FontAwesomeIcon
+                className="detail-comment_title--icon"
+                icon="comment-alt"
+                style={{ transform: "rotateY(180deg)" }}
+              />
+              <i className="detail-comment_title--count">184 </i>
+              <span className="detail-comment_title--name">Comments</span>
+            </div>
+            <Comment />
+            <div
+              className="comment"
+              style={{
+                marginTop: "1.5rem"
+              }}
+            >
+              <div className="comment-box">
+                <div
+                  className="comment-box__load-comment"
+                  style={{
+                    background: "none",
+                    fontSize: "1.6rem",
+                    padding: "0"
+                  }}
+                >
+                  Login to leave more comment
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
@@ -207,7 +260,7 @@ class MovieDetail extends React.Component {
   componentDidMount() {
     let { id } =
       (this.props && this.props.location && this.props.location.state) || {};
-    let apiUrl = `https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=en-US&append_to_response=videos,images,similar,credits`;
+    let apiUrl = `https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.REACT_APP_TMDB_API_KEY}&language=en-US&append_to_response=videos,images,similar,credits,reviews`;
 
     axios(apiUrl)
       .then(

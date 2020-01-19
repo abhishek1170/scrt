@@ -1,0 +1,48 @@
+.download-spec {
+  color: $font-grey;
+  &_header {
+    @include heading_level(3);
+    &--title {
+      font-weight: bold;
+      color: white;
+      padding: 1rem 15rem 1rem 1rem;
+    }
+    &--input {
+      &:first-of-type {
+        color: white;
+        background: $dark-website;
+      }
+      font-weight: lighter;
+      padding: 1rem 2rem;
+      outline: none;
+      border: none;
+      font-weight: bold;
+      color: $font-grey;
+      @include heading_level(2);
+      border-radius: 4px;
+      background: none;
+      cursor: pointer;
+      margin-bottom: -2px;
+    }
+  }
+  &_detail {
+    background: $dark-website;
+    width: 100%;
+    border-radius: .5rem;
+    padding: 2rem 4rem;
+    @include heading_level(2);
+    border-collapse:separate;
+    border-spacing: 3rem 0px;
+    td {
+      padding: 2rem 0 2rem 0rem;
+    }
+    :first-child {
+      td {
+        border-bottom: 1px solid $light-white;
+      }
+    }
+    &--icon {
+      margin-right: 1em;
+    }
+  }
+}

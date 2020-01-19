@@ -10,6 +10,7 @@ import VideoLeft from "./videoplayer/play_left1.png";
 import VideoRight from "./videoplayer/play_right.png";
 import VideoTop from "./videoplayer/play_top.png";
 
+import DefaultAvatar from "./default_avatar.jpg"
 export {
   BackgroundOne,
   BackgroundSecond,
@@ -20,5 +21,6 @@ export {
   posterSecond,
   VideoLeft,
   VideoRight,
-  VideoTop
+  VideoTop,
+  DefaultAvatar
 };

@@ -8,13 +8,16 @@ import {
   faExpandArrowsAlt, // expand-arrows-alt
   faVolumeUp, //volume-up
   faEye, //eye
-  faFilm //film
+  faFilm, //film,
+  faStar, //star
+  faCommentAlt //comment-alt
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
   //detail download icon
   faClosedCaptioning, //closed-captioning from regular
-  faClock //clock from regular
+  faClock, //clock from regular
+  faHeart // heart
 } from "@fortawesome/free-regular-svg-icons";
 
 library.add(
@@ -25,5 +28,8 @@ library.add(
   faEye,
   faFilm,
   faClosedCaptioning,
-  faClock
+  faClock,
+  faStar,
+  faCommentAlt,
+  faHeart
 );

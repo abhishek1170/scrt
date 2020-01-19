@@ -1,0 +1,24 @@
+.reviews {
+  @include heading_level(2);
+  padding:2rem 0rem;
+  color: $font-grey;
+  &_by {
+    font-weight: 100;
+    &--author {
+      font-weight: bold;
+    }
+    &--icon {
+      color: $dark-green;
+      @include heading_level(1.3);
+      padding: 0rem 0.8rem;
+    }
+    &--rating {
+      color: white;
+      font-weight: bold;
+    }
+  }
+  &_heading {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
