@@ -1,6 +1,7 @@
 .detail {
     background: #171717;
     color: white;
+    display: flex;
 }
   
 .detail > div {
@@ -109,4 +110,6 @@
 
 .detail_about{
   display: flex;
+  flex:1;
+  background-color: ;
 }

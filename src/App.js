@@ -19,7 +19,7 @@ import Detail from "./screens/detail";
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
+      <>
         <Header />
         <Switch>
           <Route path="/movie">
@@ -33,7 +33,7 @@ class App extends React.Component {
           </Route>
         </Switch>
         <Footer />
-      </div>
+      </>
     );
   }
 }
