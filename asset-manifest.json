@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/scrt/static/css/main.3843ae42.chunk.css",
+    "main.js": "/scrt/static/js/main.9f725e4c.chunk.js",
+    "main.js.map": "/scrt/static/js/main.9f725e4c.chunk.js.map",
+    "runtime-main.js": "/scrt/static/js/runtime-main.4fd6bd4b.js",
+    "runtime-main.js.map": "/scrt/static/js/runtime-main.4fd6bd4b.js.map",
+    "static/js/2.1ad93502.chunk.js": "/scrt/static/js/2.1ad93502.chunk.js",
+    "static/js/2.1ad93502.chunk.js.map": "/scrt/static/js/2.1ad93502.chunk.js.map",
+    "index.html": "/scrt/index.html",
+    "precache-manifest.d0125a72e52d6647935849572ca84dec.js": "/scrt/precache-manifest.d0125a72e52d6647935849572ca84dec.js",
+    "service-worker.js": "/scrt/service-worker.js",
+    "static/css/main.3843ae42.chunk.css.map": "/scrt/static/css/main.3843ae42.chunk.css.map",
+    "static/js/2.1ad93502.chunk.js.LICENSE": "/scrt/static/js/2.1ad93502.chunk.js.LICENSE",
+    "static/media/backgroundSecond.jpg": "/scrt/static/media/backgroundSecond.ac64fb19.jpg",
+    "static/media/logo-YTS.svg": "/scrt/static/media/logo-YTS.1ac78416.svg",
+    "static/media/posterOne.jpg": "/scrt/static/media/posterOne.f61ddfd6.jpg",
+    "static/media/posterSecond.jpg": "/scrt/static/media/posterSecond.654fb636.jpg",
+    "static/media/screenshot1.jpg": "/scrt/static/media/screenshot1.a4af77b0.jpg",
+    "static/media/screenshot2.jpg": "/scrt/static/media/screenshot2.43813370.jpg",
+    "static/media/screenshot3.jpg": "/scrt/static/media/screenshot3.ad182106.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4fd6bd4b.js",
+    "static/js/2.1ad93502.chunk.js",
+    "static/css/main.3843ae42.chunk.css",
+    "static/js/main.9f725e4c.chunk.js"
+  ]
+}
